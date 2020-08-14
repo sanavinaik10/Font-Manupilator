@@ -12,6 +12,11 @@ function setup() {
     posenet.on('pose', gotPoses);
 }
 function draw() {
+    background("#E7CBFF");
+    textSize(difference);
+    fill("#527EFC");
+    text("Sanavi", 150,150);
+    document.getElementById("text_size").innerHTML = "Size of text is " + difference;
 }
 function modelLoaded() {
     console.log("Model is Loaded");
